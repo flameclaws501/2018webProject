@@ -15,25 +15,22 @@ h2 {font-weight: bolder;
 
 #flag-nepal {width: 2.5%}
 
-#main  {background-color: #333333;
-        background-image: url( 'Image/main/logo.png' );
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: relative;
-        float: left;
-        left: 100px;
-        top: 50px;
-        border-style: groove;
+#main  {border-style: groove;
         border-width: 10px;
         border-radius: 5px;
         border-color: orange;
-        width: 550px;
-        height: 500px}
+        position: relative;
+        left: 250px;
+        width: 1020px;
+        height: 582px;}
+
+img#screenPic {width: 1000px;
+               height: 562px;}
 
 #google  {background-color: rgb(243, 243, 211);
           position: relative;
-          left: 320px;
+          float: left;
+          left: 100px;
           top: 50px;
           border-style: groove;
           border-width: 10px;
@@ -45,8 +42,7 @@ h2 {font-weight: bolder;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
-        float: left;
-        left: 100px;
+        left: 320px;
         top: 50px;
         border-style: groove;
         border-width: 10px;
