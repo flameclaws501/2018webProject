@@ -5,11 +5,15 @@
         <meta charset = "utf-8">
         <title>nepal</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
         <link rel="stylesheet" href="map.css">
+
         <script src = "jquery-3.3.1.js"></script>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src = "map.js"></script>
     </head>
     <body background = "Image\background\nepal.jpg">
         <div class="jumbotron" style = "background-color: green">
@@ -19,11 +23,21 @@
             </h2>
         </div>
 
-        <div id = "main" style = "border-color: darkgreen;"></div>
+        <div class="slider single" id = "main" style = "border-color: #29a3a3;">
+            <img id = "screenPic" src = "Image\nepal\nepal-screenshot-001.jpg">
+            <img id = "screenPic" src = "Image\nepal\nepal-screenshot-002.jpg">
+            <img id = "screenPic" src = "Image\nepal\nepal-screenshot-003.jpg">
+        </div>
+
         <iframe
             id = "google"
             style = "border-color: darkgreen;"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2IVs5DbZLFG77qmJVd37v3p8W_22nNFQ&q=nepal">
         </iframe>
+
+        <img src = "Image/map/nepal.jpg" id = "map-long" style = "border-color: #29a3a3;"></img>
+
+        <script src = "slick/slick.min.js"></script>
+        <script src = "map.js"></script>
     </body>
 </html>

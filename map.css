@@ -48,8 +48,22 @@ img#screenPic {width: 1000px;
         border-width: 10px;
         border-radius: 5px;
         border-color: orange;
-        width: 550px;
+        width: 505px;
         height: 500px}
+
+#map-long      {background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                left: 250px;
+                top: 100px;
+                border-style: groove;
+                border-width: 10px;
+                border-radius: 5px;
+                border-color: orange;
+                width: 1035px;
+                height: 500px}
+        
 
 @media only screen and (max-width: 600px) {
         div {width: 100%;}
