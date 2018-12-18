@@ -1,0 +1,24 @@
+body   {font-family: 微軟正黑體;
+        background-color: #333333;
+        background-size: 45%;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;}
+
+.jumbotron {height: 10px}
+
+h2 {font-weight: bolder;
+    text-align: center;
+    color: black;
+    position: relative;
+    bottom: 20px;}
+
+#update {color: white}
+
+#pic {width: 100%;
+      border-style: solid;
+      border-width: 4px;
+      border-color: grey;
+      transition: transform .2s;}
+
+#pic:hover {transform: scale(1.15);}

@@ -1,0 +1,61 @@
+body   {font-family: 微軟正黑體;
+        background-size: 100%;
+        background-attachment: fixed;}
+
+.jumbotron {height: 10px}
+
+h2 {font-weight: bolder;
+    text-align: center;
+    color: black;
+    position: relative;
+    bottom: 20px;}
+
+#flag  {width: 5%;
+        height: 5%}
+
+#flag-nepal {width: 2.5%}
+
+#main  {background-color: #333333;
+        background-image: url( 'Image/main/logo.png' );
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        float: left;
+        left: 100px;
+        top: 50px;
+        border-style: groove;
+        border-width: 10px;
+        border-radius: 5px;
+        border-color: orange;
+        width: 550px;
+        height: 500px}
+
+#google  {background-color: rgb(243, 243, 211);
+          position: relative;
+          left: 320px;
+          top: 50px;
+          border-style: groove;
+          border-width: 10px;
+          border-radius: 5px;
+          width: 550px;
+          height: 500px}
+
+#map   {background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        float: left;
+        left: 100px;
+        top: 50px;
+        border-style: groove;
+        border-width: 10px;
+        border-radius: 5px;
+        border-color: orange;
+        width: 550px;
+        height: 500px}
+
+@media only screen and (max-width: 600px) {
+        div {width: 100%;}
+        iframe {width: 100%;
+                left: 100px;}}
