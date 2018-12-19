@@ -14,7 +14,7 @@ $(document).ready(function(){
             output += "<div class = 'col-sm-4'>" + 
                       "<h4>" + data15[idx].Chinese + "</h4>" +
                       "<h5>" + data15[idx].English + "</h5><br>" +
-                      "<a href = '" + data15[idx].Name + ".html'><img src = 'Image/main/" + data15[idx].Name + ".PNG' alt = 'pagePicture' id = 'pic' align = 'middle'></a>" + 
+                      "<a href = '" + data15[idx].Name + ".html'><img src = 'Image/main/" + data15[idx].Name + ".png' alt = 'pagePicture' id = 'pic' align = 'middle'></a>" + 
                       "</div>";
             
             if(idx % 3 == 2)
