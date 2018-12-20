@@ -1,0 +1,67 @@
+body   {font-family: 微軟正黑體;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat}
+
+.jumbotron {height: 10px}
+
+h2     {font-weight: bolder;
+        text-align: center;
+        color: black;
+        position: relative;
+        bottom: 20px;}
+
+#flag  {width: 5%;
+        height: 5%}
+
+#flag-nepal {width: 2.5%}
+
+#main  {border-style: groove;
+        border-width: 10px;
+        border-radius: 5px;
+        position: relative;
+        left: 250px;
+        width: 1020px;
+        height: 582px;}
+
+img#screenPic {width: 1000px;
+               height: 562px;}
+
+#google  {background-color: rgb(243, 243, 211);
+          position: relative;
+          left: 170px;
+          top: 50px;
+          border-style: groove;
+          border-width: 10px;
+          border-radius: 5px;
+          width: 550px;
+          height: 500px}
+
+#map      {background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                left: 250px;
+                top: 100px;
+                border-style: groove;
+                border-width: 10px;
+                border-radius: 5px;
+                border-color: orange;
+                width: 1035px;
+                height: 500px}
+
+#description      {border-style: groove;
+                        border-width: 10px;
+                        border-radius: 5px;
+                        background-image: url("Image/main/logo.png");
+                        background-color: #333333;
+                        background-size: 40%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        color: white;
+                        position: relative;
+                        float: left;
+                        left: 100px;
+                        top: 50px;
+                        width: 700px;
+                        height: 500px}
