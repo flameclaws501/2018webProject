@@ -1,3 +1,6 @@
 $(document).ready(function(){
-    $('.single').slick();
+    $('.single').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 });
