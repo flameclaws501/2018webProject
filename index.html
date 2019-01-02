@@ -13,10 +13,23 @@
     </head>
     <body>
         <div class="jumbotron">
-            <h2><span>鬥陣特攻</span><img id = "logo" src = "Image/main/overwatch.png" style = "width: 125px"><span>地圖介紹</span></h2>
+            <h2>
+                <span>鬥陣特攻</span>
+                <img id = "logo" src = "Image/main/overwatch.png" style = "width: 125px">
+                <span>地圖介紹</span>
+                <audio autoplay loop controls id = "bgm">
+                    <source src = "bgm/main.mp3" type = "audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </h2>
         </div>
 
         <div id = "update" class = "container" align = "center" style = "width: 90%; text-align: center;">
         </div>
+
+        <script>
+            var bgm = document.getElementById("bgm");
+            bgm.volume = 0.15;
+        </script>
     </body>
 </html>

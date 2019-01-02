@@ -16,14 +16,19 @@
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </head>
     <body background = "Image\background\dorado.jpg" id = "update">
-        <div class="jumbotron" style = "background-color: #33cccc">
+        <div class="jumbotron" style = "background-color: #206dc5cb">
             <h2>
                 <span>多拉多 Dorado</span><img id = "flag" src = "Image\flag\dorado.jpg">
                 <a href="index.html" class="btn btn-primary">回首頁</a>
             </h2>
         </div>
 
-        <div class="slider single" id = "main" style = "border-color: #29a3a3;;">
+        <audio autoplay loop controls id = "vol">
+            <source id = "bgm" src = "" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="slider single" id = "main" style = "border-color: #1844be;">
             <img id = "screenPic" src = "Image\dorado\dorado-screenshot-001.jpg">
             <img id = "screenPic" src = "Image\dorado\dorado-screenshot-002.jpg">
             <img id = "screenPic" src = "Image\dorado\dorado-screenshot-003.jpg">
@@ -31,15 +36,31 @@
             <img id = "screenPic" src = "Image\dorado\dorado-screenshot-005.jpg">
         </div>
 
+        <div id = "description" style = "border-color: #1844be;">
+            <h1 style = "float: left">花</h1>
+            <h5>
+                
+            </h5>
+        </div>
+
         <iframe
             id = "google"
-            style = "border-color: #29a3a3;"
+            style = "border-color: #1844be;"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2IVs5DbZLFG77qmJVd37v3p8W_22nNFQ&q=mexico">
         </iframe>
 
-        <img src = "Image/map/dorado.jpg" id = "map" style = "border-color: #29a3a3;"></img>
+        <img src = "Image/map/dorado.jpg" id = "map" style = "border-color: #1844be;"></img>
 
         <script src = "slick/slick.min.js"></script>
         <script src = "map.js"></script>
+
+        <script>
+            var num = Math.floor(1 + Math.random() * 4);
+            var bgm = document.getElementById("bgm");
+            var vol = document.getElementById("vol");
+            bgm.src = "bgm/dorado/dorado-" + num + ".mp3";
+
+            vol.volume = 0.2;
+        </script>
     </body>
 </html>

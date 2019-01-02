@@ -23,6 +23,11 @@
             </h2>
         </div>
 
+        <audio autoplay loop controls id = "vol">
+            <source id = "bgm" src = "" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
         <div class="slider single" id = "main" style = "border-color: #ffcc00;">
             <img id = "screenPic" src = "Image\nepal\nepal-screenshot-001.jpg">
             <img id = "screenPic" src = "Image\nepal\nepal-screenshot-002.jpg">
@@ -51,5 +56,14 @@
 
         <script src = "slick/slick.min.js"></script>
         <script src = "map.js"></script>
+
+        <script>
+            var num = Math.floor(1 + Math.random() * 2);
+            var bgm = document.getElementById("bgm");
+            var vol = document.getElementById("vol");
+            bgm.src = "bgm/nepal/nepal-" + num + ".mp3";
+
+            vol.volume = 0.8;
+        </script>
     </body>
 </html>
