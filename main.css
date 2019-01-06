@@ -24,7 +24,7 @@ h2 {font-weight: bolder;
 
 #pic:hover {transform: scale(1.15);}
 
-#loading    {background: url('loading/loading2.gif') no-repeat center center;
+#loading    {background: url('loading/loading1.gif') no-repeat center center;
              background-color: black;
              position: absolute;
              height: 100%;

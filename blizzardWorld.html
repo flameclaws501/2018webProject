@@ -19,10 +19,13 @@
                 $('#loading').hide();
             }
 
-            $(window).ready(hideLoader);
+            function playBgm() { 
+                $('#bgm').trigger("play");
+            }
 
             // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-            setTimeout(hideLoader, 20 * 1000);
+            setTimeout(hideLoader, 5 * 1000);
+            setTimeout(playBgm, 5 * 1000);
         </script>
     </head>
     <body background = "Image\background\blizzardWorld.jpg" id = "update">
@@ -34,8 +37,8 @@
             </h2>
         </div>
 
-        <audio autoplay loop controls id = "vol">
-            <source id = "bgm" src = "" type = "audio/mpeg">
+        <audio loop controls id = "bgm">
+            <source id = "vol" src = "" type = "audio/mpeg">
             Your browser does not support the audio element.
         </audio>
 
@@ -71,9 +74,9 @@
             var num = Math.floor(1 + Math.random() * 2);
             var bgm = document.getElementById("bgm");
             var vol = document.getElementById("vol");
-            bgm.src = "bgm/blizzardWorld/blizzardWorld-" + num + ".mp3";
+            vol.src = "bgm/blizzardWorld/blizzardWorld-" + num + ".mp3";
             
-            vol.volume = 0.2;
+            bgm.volume = 0.2;
         </script>
     </body>
 </html>

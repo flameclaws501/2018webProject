@@ -16,10 +16,13 @@
                 $('#loading').hide();
             }
 
-            $(window).ready(hideLoader);
+            function playBgm() { 
+                $('#bgm').trigger("play");
+            }
 
             // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-            setTimeout(hideLoader, 20 * 1000);
+            setTimeout(hideLoader, 4 * 1000);
+            setTimeout(playBgm, 4 * 1000);
         </script>
     </head>
     <body>
@@ -30,8 +33,8 @@
                 <span>鬥陣特攻</span>
                 <img id = "logo" src = "Image/main/overwatch.png" style = "width: 125px">
                 <span>地圖介紹</span>
-                <audio autoplay loop controls id = "bgm">
-                    <source src = "bgm/main.mp3" type = "audio/mpeg">
+                <audio loop controls id = "bgm">
+                    <source id = "vol" src = "bgm/main.mp3" type = "audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </h2>
