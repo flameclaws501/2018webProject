@@ -23,3 +23,10 @@ h2 {font-weight: bolder;
       transition: transform .2s;}
 
 #pic:hover {transform: scale(1.15);}
+
+#loading    {background: url('loading/loading2.gif') no-repeat center center;
+             background-color: black;
+             position: absolute;
+             height: 100%;
+             width: 100%;
+             z-index: 9999999;}

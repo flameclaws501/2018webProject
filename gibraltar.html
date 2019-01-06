@@ -14,8 +14,19 @@
         <script src = "jquery-3.3.1.js"></script>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script>
+            function hideLoader() {
+                $('#loading').hide();
+            }
+
+            $(window).ready(hideLoader);
+
+            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+            setTimeout(hideLoader, 20 * 1000);
+        </script>
     </head>
     <body background = "Image\background\gibraltar.jpg">
+        <div id="loading"></div>
         <div class="jumbotron" style = "background-color: #0288c7a9;">
             <h2>
                 <span>監測站：直布羅陀 Watchpoint: Gibraltar</span><img id = "flag" src = "Image\flag\gibraltar.jpg">

@@ -64,3 +64,10 @@ img#screenPic {width: 1000px;
                 top: 50px;
                 width: 650px;
                 height: 500px;}
+
+#loading        {background: url('loading/loading1.gif') no-repeat center center;
+                 background-color: black;
+                 position: absolute;
+                 height: 100%;
+                 width: 100%;
+                 z-index: 9999999;}
