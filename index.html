@@ -12,17 +12,32 @@
         <script src = "main.js"></script>
         
         <script>
-            function hideLoader() {
+            if(!localStorage.getItem("visted"))
+            {
+                setTimeout(hideLoader, 3.5 * 1000);
+                setTimeout(playBgm, 3.5 * 1000);
+                localStorage.setItem("visted",true);
+            }
+            else
+            {
+                setTimeout(hideLoader, 0 * 1000);
+                setTimeout(playBgm, 0 * 1000);
+            }
+
+            function hideLoader()
+            {
                 $('#loading').hide();
             }
 
-            function playBgm() { 
+            function playBgm()
+            { 
                 $('#bgm').trigger("play");
             }
 
-            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-            setTimeout(hideLoader, 4 * 1000);
-            setTimeout(playBgm, 4 * 1000);
+            function clearVisit()
+            {
+                localStorage.clear();
+            }
         </script>
     </head>
     <body>
@@ -30,7 +45,7 @@
 
         <div class="jumbotron">
             <h2>
-                <button class="btn btn-success" onclick="window.open('Overwatch地圖介紹_00557013+00557048.pptx')">說明文件</button>
+                <button class = "btn btn-success" onclick = "window.open('Overwatch地圖介紹_00557013+00557048.pptx')">說明文件</button>
                 <span>鬥陣特攻</span>
                 <img id = "logo" src = "Image/main/overwatch.png" style = "width: 125px">
                 <span>地圖介紹</span>
@@ -43,6 +58,8 @@
 
         <div id = "update" class = "container" align = "center" style = "width: 90%; text-align: center;">
         </div>
+
+        <button class = "btn btn-danger" onclick = "clearVisit()">清理資料</button>
 
         <script>
             var bgm = document.getElementById("bgm");
