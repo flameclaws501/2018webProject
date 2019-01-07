@@ -15,6 +15,18 @@
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <script>
+            if(!localStorage.getItem("visted15"))
+            {
+                setTimeout(hideLoader, 5 * 1000);
+                setTimeout(playBgm, 5 * 1000);
+                localStorage.setItem("visted15",true);
+            }
+            else
+            {
+                setTimeout(hideLoader, 2 * 1000);
+                setTimeout(playBgm, 2 * 1000);
+            }
+
             function hideLoader() {
                 $('#loading').hide();
             }
@@ -22,10 +34,6 @@
             function playBgm() { 
                 $('#bgm').trigger("play");
             }
-
-            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-            setTimeout(hideLoader, 5 * 1000);
-            setTimeout(playBgm, 5 * 1000);
         </script>
     </head>
     <body background = "Image\background\volskaya.jpg">
@@ -91,9 +99,9 @@
             var num = Math.floor(1 + Math.random() * 2);
             var bgm = document.getElementById("bgm");
             var vol = document.getElementById("vol");
-            bgm.src = "bgm/volskaya/volskaya-" + num + ".mp3";
+            vol.src = "bgm/volskaya/volskaya-" + num + ".mp3";
 
-            vol.volume = 0.3;
+            bgm.volume = 0.3;
         </script>
     </body>
 </html>
